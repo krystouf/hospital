@@ -1,0 +1,38 @@
+[
+   {
+      "doctor_id": 1,
+      "info" : {
+         "FirstName" : "John",
+         "LastName" : "Smith",
+         "Phone" : "0554566325"
+      },
+      "service_id" : 1
+   }
+   {
+      "doctor_id": 2,
+      "info" : {
+         "FirstName" : "Mark",
+         "LastName" : "Brady",
+         "Phone" : "0502365896"
+      },
+      "service_id" : 2
+   }
+   {
+      "doctor_id": 3,
+      "info" : {
+         "FirstName" : "Nick",
+         "LastName" : "Folks",
+         "Phone" : "0502125458"
+      },
+      "service_id" : 3
+   }
+   {
+      "doctor_id": 4,
+      "info" : {
+         "FirstName" : "Russel",
+         "LastName" : "Wilson",
+         "Phone" : "0554522365"
+      },
+      "service_id" : 4
+   }
+]

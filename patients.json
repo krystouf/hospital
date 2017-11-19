@@ -1,0 +1,18 @@
+{
+   "patient_id": 1,
+   "info" : {
+      "FirstName" : "Sami",
+      "LastName" : "Fares",
+      "Phone" : "0502236698"
+   },
+   "visits" : [
+      {
+         "date" : "2017-11-19",
+         "service" : 1,
+         "doctor" : 1,
+         "paid" : false,
+         "checked-in" : false
+      }
+   ]
+}
+

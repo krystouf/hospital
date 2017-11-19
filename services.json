@@ -1,0 +1,18 @@
+[
+	{
+	   "service_id": 1,
+	   "name" : "General Medicine"
+	},
+	{
+	   "service_id": 2,
+	   "name" : "Radiology"
+	},
+	{
+	   "service_id": 3,
+	   "name" : "Cardiology"
+	},
+	{
+	   "service_id": 4,
+	   "name" : "Pediatrics"
+	}
+]

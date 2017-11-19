@@ -1,0 +1,55 @@
+
+
+service: hospital-lambda
+
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  environment: 
+    MONGODB_ATLAS_CLUSTER_URI: "mongodb://hospitaladmin:sh6QOswLHeDYniMA@cltest-shard-00-00-jne4z.mongodb.net:27017,cltest-shard-00-01-jne4z.mongodb.net:27017,cltest-shard-00-02-jne4z.mongodb.net:27017/hospital?ssl=true&replicaSet=CLTest-shard-0&authSource=admin"
+
+functions:
+  hpInsertServ:
+    handler: handler.hpInsertServ
+    events:
+      - http:
+          path: /hospital/addServices
+          method: post
+  hpInsertDocs:
+    handler: handler.hpInsertDocs
+    events:
+      - http:
+          path: /hospital/addDocs
+          method: post
+  hpNewPatient:
+    handler: handler.hpNewPatient
+    events:
+      - http:
+          path: /hospital/addPatients
+          method: post
+  hpRetrieveAllServices:
+    handler: handler.hpRetrieveAllServices
+    events:
+      - http:
+          path: /hospital/getAllServices
+          method: get
+  hpRetreiveDocs:
+    handler: handler.hpRetreiveDocs
+    events:
+      - http:
+          path: /hospital/getAllDocs
+          method: get
+  hpRetrievePatient:
+    handler: handler.hpRetrievePatient
+    events:
+      - http:
+          path: /hospital/getAllPatients
+          method: get
+package:
+ include:
+    - node_modules/**
+    - handler.js
+    - services.json
+    - doctors.json
+    - patients.json
